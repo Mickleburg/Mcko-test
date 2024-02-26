@@ -24,7 +24,7 @@ with open('data/vacancy.csv', encoding='utf8') as csv_file:
         new_row['percent'] = str(perc)
         answer.append(new_row)
 
-"""СОздаём новый файл с процентами"""
+"""Создаём новый файл с процентами"""
 with open('data/vacancy_procent.csv', 'w', newline='', encoding='utf8') as csv_file:
     w = csv.DictWriter(csv_file, fieldnames=['Salary', 'Work_Type', 'Company_Size', 'Role', 'Company', 'percent'])
     w.writeheader()
